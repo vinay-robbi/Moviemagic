@@ -20,5 +20,5 @@ app.config['DYNAMODB_TABLE'] = dynamodb.Table(DYNAMODB_TABLE)
 app.config['SNS_CLIENT'] = sns
 app.config['SNS_TOPIC_ARN'] = SNS_TOPIC_ARN
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
