@@ -2,7 +2,7 @@ from flask import Flask
 import boto3
 from app.routes import bp as routes_bp
 
-app = Flask(_name_)
+app = Flask(__name__)
 app.secret_key = 'supersecretkey'
 app.register_blueprint(routes_bp)
 
