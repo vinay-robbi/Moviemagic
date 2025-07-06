@@ -8,8 +8,8 @@ app.register_blueprint(routes_bp)
 
 # AWS Configuration
 AWS_REGION = 'us-east-1'  # Change to your region
-DYNAMODB_TABLE = 'Movies' # Change to your table name
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:123456789012:YourTopic' # Change to your SNS topic ARN
+DYNAMODB_TABLE = 'MovieMagic_Users' # Change to your table name
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:241533142623:MovieMagic:b00f20b2-e71e-425c-a174-4f31dafd73cc' # Change to your SNS topic ARN
 
 # Initialize AWS clients
 dynamodb = boto3.resource('dynamodb', region_name=AWS_REGION)
