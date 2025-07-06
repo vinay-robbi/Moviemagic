@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, sessio
 import uuid
 import boto3
 
-bp = Blueprint('routes', _name_)
+bp = Blueprint('routes', __name__)
 
 # Helper: Get DynamoDB table
 def get_table(name):
